@@ -5119,6 +5119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2efebe7f8a76c46a3303fa86fefb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectableTag: Selectable
+  highlightMaterial: {fileID: 598211468776468443, guid: 669b0f4352b03b04781ef10644b16ce2, type: 3}
+  defaultMaterial: {fileID: 0}
 --- !u!4 &1194611807
 Transform:
   m_ObjectHideFlags: 0
