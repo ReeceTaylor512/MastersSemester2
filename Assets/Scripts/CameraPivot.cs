@@ -45,11 +45,13 @@ public class CameraPivot : MonoBehaviour
 
     void HandleMouseInput()
     {
-        var LeftMouseButton = playerInput.actions["LMB"];
-        var RightMouseButton = playerInput.actions["RMB"];
-        
-        if (LeftMouseButton.WasPerformedThisFrame())
+        var LeftMouseButton = Mouse.current.leftButton;
+
+
+        if (LeftMouseButton.wasPressedThisFrame)
         {
+            Debug.Log("LMB was pressed");
+            
             Plane plane = new Plane(Vector3.up, Vector3.zero);
 
             Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -62,7 +64,7 @@ public class CameraPivot : MonoBehaviour
             }
         }
 
-        if (LeftMouseButton.IsPressed())
+        if (LeftMouseButton.isPressed)
         {
             Plane plane = new Plane(Vector3.up, Vector3.zero);
 

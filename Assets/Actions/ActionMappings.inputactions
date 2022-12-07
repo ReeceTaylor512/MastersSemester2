@@ -219,9 +219,9 @@
             "actions": [
                 {
                     "name": "LMB",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "42127d7f-e085-4fe8-9cad-959e92415324",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
