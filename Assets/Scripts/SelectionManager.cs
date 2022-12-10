@@ -14,7 +14,7 @@ public class SelectionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -32,14 +32,18 @@ public class SelectionManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             var selection = hit.transform;
-            var selectionRenderer = selection.GetComponent<Renderer>();
-            if (selectionRenderer != null)
+            if (selection.CompareTag(selectableTag))
             {
-                selectionRenderer.material = highlightMaterial;
+
+                var selectionRenderer = selection.GetComponent<Renderer>();
+                if (selectionRenderer != null)
+                {
+                    selectionRenderer.material = highlightMaterial;
+                }
+
+                _selection = selection;
             }
 
-            _selection = selection;
         }
-
     }
 }
