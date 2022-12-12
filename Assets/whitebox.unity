@@ -849,7 +849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.x
@@ -857,15 +857,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -897,11 +897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 290
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2545,7 +2545,7 @@ GameObject:
   - component: {fileID: 530973252}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2747,7 +2747,7 @@ GameObject:
   - component: {fileID: 555648868}
   m_Layer: 0
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2870,7 +2870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2878,15 +2878,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2918,11 +2918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 185
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3244,7 +3244,7 @@ GameObject:
   - component: {fileID: 685341850}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4810,7 +4810,7 @@ GameObject:
   - component: {fileID: 949522958}
   m_Layer: 0
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5774,7 +5774,7 @@ GameObject:
   - component: {fileID: 1133072607}
   m_Layer: 0
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6100,7 +6100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectableTag: Selectable
   highlightMaterial: {fileID: 598211468776468443, guid: 669b0f4352b03b04781ef10644b16ce2, type: 3}
-  defaultMaterial: {fileID: 0}
+  defaultMaterial: {fileID: 2100000, guid: b77073cae85fbab4295ea48206661533, type: 2}
 --- !u!4 &1194611807
 Transform:
   m_ObjectHideFlags: 0
@@ -6406,7 +6406,7 @@ GameObject:
   - component: {fileID: 1244231365}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6705,7 +6705,7 @@ GameObject:
   - component: {fileID: 1258709290}
   m_Layer: 0
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7663,7 +7663,7 @@ GameObject:
   - component: {fileID: 1529199078}
   m_Layer: 0
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9965,7 +9965,7 @@ GameObject:
   - component: {fileID: 1994876776}
   m_Layer: 0
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Selectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10484,7 +10484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.x
@@ -10492,15 +10492,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10532,11 +10532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8912394521834527039, guid: 9026faf43af70fb4798ea3d6964dce98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
