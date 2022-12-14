@@ -27,7 +27,12 @@ public class InventorySystem
             inventorySlots.Add(new InventorySlots());
         }
 
+    }
 
+    public bool AddToInvemtory(InventoryData itemToAdd, int amountToAdd)
+    {
+        inventorySlots[0] = new InventorySlots(itemToAdd, amountToAdd);
+        return true;
     }
 
 }
