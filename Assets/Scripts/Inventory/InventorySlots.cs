@@ -50,6 +50,13 @@ public class InventorySlots
 
     }
 
+    public void UpdateInventorySlot(InventoryData data, int amount)
+    {
+        itemdata = data;
+        stackSize = amount;
+    }
+
+
     public void AddToStack(int amount)
     {
         stackSize += amount;
