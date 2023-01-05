@@ -31,15 +31,24 @@ public class InventorySystem
 
     public bool AddToInvemtory(InventoryData itemToAdd, int amountToAdd)
     {
-        if (ContainsItem(itemToAdd, out InventorySlots invslot))
-        {
-            invslot.AddToStack(amountToAdd);
-            OnInventorySlotsChanged?.Invoke(invslot);
-            return true;
+        if (ContainsItem(itemToAdd, out List<InventorySlots> invslot))
 
-        }
+            foreach (var slot in invslot)
 
-        else if (HasFreeSlot(out InventorySlots freeSlot))
+            {
+                if(slot.RoomLeftInStack(amountToAdd))
+
+                
+                {
+                    slot.AddToStack(amountToAdd);
+                    OnInventorySlotsChanged?.Invoke(slot);
+                    return true;
+
+                }
+            }
+
+
+        if (HasFreeSlot(out InventorySlots freeSlot))
         {
             freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
             OnInventorySlotsChanged?.Invoke(freeSlot);
@@ -50,10 +59,11 @@ public class InventorySystem
         return false;
     }
 
-    public bool ContainsItem(InventoryData itemToAdd, out InventorySlots invSlot)
+    public bool ContainsItem(InventoryData itemToAdd, out List<InventorySlots> invSlot)
     {
-        invSlot = null;
-        return false;
+        invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
+
+        return invSlot.Count > 1 ? true : false;
 
     }
 
