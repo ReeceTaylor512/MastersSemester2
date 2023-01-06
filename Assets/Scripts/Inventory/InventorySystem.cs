@@ -6,7 +6,7 @@ using System.Linq;
 
 [System.Serializable]
 
-public class InventorySystem 
+public class InventorySystem
 {
 
     [SerializeField] private List<InventorySlots> inventorySlots;
@@ -36,9 +36,9 @@ public class InventorySystem
             foreach (var slot in invslot)
 
             {
-                if(slot.RoomLeftInStack(amountToAdd))
+                if (slot.RoomLeftInStack(amountToAdd))
 
-                
+
                 {
                     slot.AddToStack(amountToAdd);
                     OnInventorySlotsChanged?.Invoke(slot);
@@ -63,13 +63,14 @@ public class InventorySystem
     {
         invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
 
-        return invSlot.Count > 1 ? true : false;
+        return invSlot == null ? false : true;
 
     }
 
     public bool HasFreeSlot(out InventorySlots freeSlot)
     {
-        freeSlot = null;
-        return false;
+        freeSlot = InventorySlots.FirstOrDefault(i => i.ItemData == null);
+        return freeSlot == null ? false : true;
+
     }
 }
