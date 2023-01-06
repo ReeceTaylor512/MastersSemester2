@@ -48,7 +48,8 @@ public class ClickBase : MonoBehaviour
         }
         if (selectedObject != null)
         {
-            if (!CanvasElement.activeInHierarchy)
+            
+            if (QuestionAsked == false && !CanvasElement.activeInHierarchy)
             {
                 CanvasElement.SetActive(true);
             }
