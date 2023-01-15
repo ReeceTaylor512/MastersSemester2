@@ -12,29 +12,17 @@ public class QuestionManager : MonoBehaviour
     float AnsweredCorrectly;   
     string percentageConverted;
     public Text TMPscore;
-    private FunctionTimer functionTimer;
+   
 
 
     private void Start()
     {
 
-       functionTimer = new FunctionTimer(OutofTime, 3f);
+    
 
     }
 
-    private void update()
-    {
-        functionTimer.Update();
-    }
-
-
-
-    private void OutofTime()
-    {
-        Debug.Log("OutofTime");
-
-    }
-
+   
 
 
     public void canceled() 

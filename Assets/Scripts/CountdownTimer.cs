@@ -7,7 +7,7 @@ public class CountdownTimer : MonoBehaviour
 {
 
     public GameObject textDisplay;
-    public int secondsLeft = 60;
+    public int secondsLeft = 30;
     public bool takingAway = false;
 
     private void Start()

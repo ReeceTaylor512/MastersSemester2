@@ -6,8 +6,8 @@ using UnityEngine;
 public class FunctionTimer : MonoBehaviour
 {
 
-    public Action action;
-    public float timer;
+    private Action action;
+   private float timer;
 
     public FunctionTimer(Action action, float timer)
     {

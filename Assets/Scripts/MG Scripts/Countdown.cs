@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Countdown : MonoBehaviour
 {
+
+    private FunctionTimer functionTimer;
     private void Start()
     {
-        new FunctionTimer(OutofTime,30f );
+       functionTimer = new FunctionTimer(OutofTime,30f );
 
            
 
+    }
+
+    private void Update()
+    {
+        functionTimer.Update();
     }
 
     private void OutofTime()
