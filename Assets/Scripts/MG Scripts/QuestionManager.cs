@@ -12,10 +12,31 @@ public class QuestionManager : MonoBehaviour
     float AnsweredCorrectly;   
     string percentageConverted;
     public Text TMPscore;
+    private FunctionTimer functionTimer;
+
+
     private void Start()
     {
-        
+
+       functionTimer = new FunctionTimer(OutofTime, 3f);
+
     }
+
+    private void update()
+    {
+        functionTimer.Update();
+    }
+
+
+
+    private void OutofTime()
+    {
+        Debug.Log("OutofTime");
+
+    }
+
+
+
     public void canceled() 
     {
         Levels[currentLevel].SetActive(false);
@@ -31,6 +52,7 @@ public class QuestionManager : MonoBehaviour
             {
                 currentLevel = 1;
                 Levels[currentLevel].SetActive(true);
+
             }
             else if (currentLevel == 1)
             {

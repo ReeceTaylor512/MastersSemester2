@@ -12716,6 +12716,33 @@ MonoBehaviour:
   - {fileID: 1075700272}
   percentage: 0
   TMPscore: {fileID: 1075700271}
+--- !u!114 &2145889717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075700270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad24a76cf0893aa4fa3f8aa0d8e75e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2145889718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075700270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e476271854cbef45b50705a11631a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 429388815}
+  secondsLeft: 60
+  takingAway: 0
 --- !u!1 &2146308635
 GameObject:
   m_ObjectHideFlags: 0
