@@ -183,7 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.31
 --- !u!1 &6135598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,7 +2496,7 @@ GameObject:
   - component: {fileID: 429388818}
   - component: {fileID: 429388817}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4583,7 +4582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &701482632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,7 +4836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &736686372
 GameObject:
   m_ObjectHideFlags: 0
@@ -5651,7 +5648,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &877183681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6036,7 +6032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &922351141
 GameObject:
   m_ObjectHideFlags: 0
@@ -8027,7 +8022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &1194611805
 GameObject:
   m_ObjectHideFlags: 0
@@ -8229,7 +8223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.29
 --- !u!1 &1238486004
 GameObject:
   m_ObjectHideFlags: 0
@@ -9611,7 +9604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &1387762319
 GameObject:
   m_ObjectHideFlags: 0
@@ -12510,7 +12502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.3
 --- !u!1 &1950269137
 GameObject:
   m_ObjectHideFlags: 0
@@ -13277,7 +13268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad6430d1f599b7542891a6c82b3f6dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0.16
 --- !u!224 &2089287808 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9082800844512297489, guid: 17b3ff08d8d98444b83c6a9b7a7b1c65, type: 3}

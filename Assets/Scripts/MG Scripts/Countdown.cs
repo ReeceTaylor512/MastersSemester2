@@ -8,7 +8,7 @@ public class Countdown : MonoBehaviour
     private FunctionTimer functionTimer;
     private void Start()
     {
-       functionTimer = new FunctionTimer(OutofTime,30f );
+       functionTimer = new FunctionTimer(OutofTime, 30f);
 
            
 
