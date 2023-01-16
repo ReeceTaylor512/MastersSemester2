@@ -11,25 +11,15 @@ public class QuestionManager : MonoBehaviour
     public float percentage;
     float AnsweredCorrectly;   
     string percentageConverted;
-    public Text TMPscore;
-   
-
-
-    private void Start()
-    {
-
-    
-
-    }
-
-   
+    public Text TMPscore;   
 
 
     public void canceled() 
     {
         Levels[currentLevel].SetActive(false);
-    }    public void correctAnswer() 
-
+    }    
+    
+    public void correctAnswer() 
     {        
         if (currentLevel != Levels.Length) 
         {
@@ -137,10 +127,11 @@ public class QuestionManager : MonoBehaviour
                 Levels[currentLevel].SetActive(true);
                 percentage = (AnsweredCorrectly / 8) * 100;                
                 Debug.Log("RAW" + percentage);
+                FinalScore();
             }
         }
     }   
-    private void Update()
+    public void FinalScore()
     {          
         TMPscore.text = ("You managed to get " + percentage + "% Well done");
     }

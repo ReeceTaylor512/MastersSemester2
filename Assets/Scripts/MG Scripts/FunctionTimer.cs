@@ -7,7 +7,7 @@ public class FunctionTimer : MonoBehaviour
 {
 
     private Action action;
-   private float timer;
+    private float timer;
 
     public FunctionTimer(Action action, float timer)
     {
@@ -23,7 +23,7 @@ public class FunctionTimer : MonoBehaviour
         if (timer <0)
         {
             // Trigger player failed.
-            action();
+            //action();
         }
     }
 }
