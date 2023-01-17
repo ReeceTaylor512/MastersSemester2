@@ -511,6 +511,7 @@ GameObject:
   - component: {fileID: 9992981}
   - component: {fileID: 9992980}
   - component: {fileID: 9992979}
+  - component: {fileID: 9992982}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -541,7 +542,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9992977}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -597,6 +598,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9992977}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &9992982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9992977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97391726f9727742ba2f14dbc4b672d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stethascope: {fileID: 0}
 --- !u!1 &17050841
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +796,7 @@ GameObject:
   - component: {fileID: 28363475}
   - component: {fileID: 28363476}
   - component: {fileID: 28363477}
+  - component: {fileID: 28363478}
   m_Layer: 0
   m_Name: Stethascope head
   m_TagString: Untagged
@@ -829,11 +844,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28363472}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.16046621, y: 0.11893274, z: 0.16876921}
   m_Center: {x: -0.0021461807, y: -0.06484941, z: -0.006872776}
+--- !u!54 &28363478
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28363472}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &32462374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2119,6 +2150,14 @@ PrefabInstance:
     - target: {fileID: 111712860048401644, guid: f9c5483343c4eaa48be9de2b5d6ca76b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 111712860610288735, guid: f9c5483343c4eaa48be9de2b5d6ca76b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.203
+      objectReference: {fileID: 0}
+    - target: {fileID: 111712860610288735, guid: f9c5483343c4eaa48be9de2b5d6ca76b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.954
       objectReference: {fileID: 0}
     - target: {fileID: 111712860677850020, guid: f9c5483343c4eaa48be9de2b5d6ca76b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3775,6 +3814,7 @@ GameObject:
   - component: {fileID: 496990900}
   - component: {fileID: 496990899}
   - component: {fileID: 496990898}
+  - component: {fileID: 496990901}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -3805,7 +3845,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496990896}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -3861,6 +3901,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496990896}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &496990901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496990896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97391726f9727742ba2f14dbc4b672d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stethascope: {fileID: 0}
 --- !u!1 &513083791
 GameObject:
   m_ObjectHideFlags: 0
@@ -13725,10 +13778,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1997932904}
   - component: {fileID: 1997932905}
-  - component: {fileID: 1997932906}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: AudioCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13741,8 +13793,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997932903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0830001, y: 1.294, z: -1.1334711}
-  m_LocalScale: {x: 0.30175, y: 0.2946, z: 0.32455}
+  m_LocalPosition: {x: -1.053, y: 1.294, z: -1.094}
+  m_LocalScale: {x: 0.4756409, y: 0.2946, z: 0.42230448}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -13756,23 +13808,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997932903}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1997932906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997932903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97391726f9727742ba2f14dbc4b672d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2005508983
 PrefabInstance:
   m_ObjectHideFlags: 0
