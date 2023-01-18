@@ -14,6 +14,8 @@ public class SphereScript : MonoBehaviour, IDrag
         rb.useGravity = true;
         //Constraints the object so it does not move after being dropped
         rb.constraints = RigidbodyConstraints.FreezeAll;
+        Cursor.visible = true;
+
 
     }
 
@@ -21,5 +23,6 @@ public class SphereScript : MonoBehaviour, IDrag
     {
         rb.useGravity = true;
         rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+        Cursor.visible = false;
     }
 }

@@ -32,6 +32,7 @@ public class Drag : MonoBehaviour
     void OnMouseDrag()
     {
         transform.position = new Vector3 (GetMouseWorldPos().x, xCoord, (GetMouseWorldPos() * 1.8f).z);
+        Cursor.visible = false;
     }
     private void OnMouseUp()
     {
