@@ -7,14 +7,13 @@ public class Drag : MonoBehaviour
     public BoxCollider BCollider;
     public AudioSource Audio;
     private float mZCoord;
-    static bool keepFadeIn;
-    static bool keepFadeOut;
     public static Drag instance;
-
-    private void Awake()
+    public float xCoord;
+    private void Start()
     {
-        instance = this;
+        xCoord = 1.3717f;          
     }
+
     void OnMouseDown()
     {
         // Store offset = gameobject world pos - mouse world pos        
@@ -32,7 +31,7 @@ public class Drag : MonoBehaviour
     }
     void OnMouseDrag()
     {
-        transform.position = new Vector3 (GetMouseWorldPos().x, 1.3717f, (GetMouseWorldPos() * 1.8f).z);
+        transform.position = new Vector3 (GetMouseWorldPos().x, xCoord, (GetMouseWorldPos() * 1.8f).z);
     }
     private void OnMouseUp()
     {
@@ -52,38 +51,5 @@ public class Drag : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Audio.Stop();
-    }
-    public static void FadeInCaller(AudioSource audioSource, float duration, float targetVolume) 
-    {
-        instance.StartCoroutine(Fadein(audioSource, duration, targetVolume));
-    }
-    public static void FadeOutCaller(AudioSource audioSource, float duration)
-    {
-        instance.StartCoroutine(Fadeout(audioSource, duration));
-    }
-    static IEnumerator Fadein(AudioSource audioSource, float duration, float targetVolume) 
-    {
-        keepFadeIn = true;
-        keepFadeOut = false;
-        audioSource.volume = 0;
-        float audioVolume = audioSource.volume;
-        while (audioSource.volume < targetVolume && keepFadeIn) 
-        {
-            audioVolume += duration;
-            audioSource.volume = audioVolume;
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
-    static IEnumerator Fadeout(AudioSource audioSource, float duration)
-    {
-        keepFadeIn = false;
-        keepFadeOut = true;
-        float audioVolume = audioSource.volume;
-        while (audioSource.volume >= duration && keepFadeIn)
-        {
-            audioVolume += duration;
-            audioSource.volume = audioVolume;
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
+    }    
 }
