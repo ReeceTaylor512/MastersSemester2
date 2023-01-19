@@ -14,10 +14,12 @@ public class Spo2 : MonoBehaviour
     Vector3 ConnectionAngles;
     public Text Spo2Readings;
     float ellapedTime;
+    AudioSource clipsound;
     private void Start()
     {
         yCoord = 1.14859664f;
         ConnectionAngles = new Vector3 (270f, 339.12738f, 0f);
+        clipsound = GetComponent<AudioSource>();
     }
     void OnMouseDown()
     {
@@ -46,6 +48,7 @@ public class Spo2 : MonoBehaviour
             transform.position = new Vector3(-1.52059579f, 1.14859664f, -1.93203783f);
             transform.eulerAngles = new Vector3(270f, 339.12738f, 0f);
             wire2.SetActive(true);
+            clipsound.Play();
             this.Wait(2f, Spo2Loading1);
         }
         else 
