@@ -11,6 +11,7 @@ public class DragDrop : MonoBehaviour
 
     [SerializeField] private float mouseDragPhysicsSpeed = 10;
     [SerializeField] private float mouseDragSpeed = 0.1f; //this changes the amount of drag the object has in relation to the mouse, reduce it to make the drag faster 
+    [SerializeField] private float yOffset;
 
     public static bool ObjectInBounds;
 
@@ -23,6 +24,7 @@ public class DragDrop : MonoBehaviour
     private WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
     
     private Vector3 velocity = Vector3.zero;
+    
 
     private void Awake()
     {
@@ -64,9 +66,10 @@ public class DragDrop : MonoBehaviour
     {
         clickedObject.TryGetComponent<Rigidbody>(out var rb); 
         clickedObject.TryGetComponent<IDrag>(out var iDragComponent);
+        Vector3 initPosition = new Vector3(clickedObject.transform.position.x, transform.position.y + yOffset, transform.position.z);
         iDragComponent?.onStartDrag();
-        
-        float initDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position); 
+
+        float initDistance = Vector3.Distance(initPosition, mainCamera.transform.position); 
 
         
         while(mouseClick.ReadValue<float>() != 0)
@@ -74,8 +77,9 @@ public class DragDrop : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
             if(rb != null)
             {
-                Vector3 direction = ray.GetPoint(initDistance) - clickedObject.transform.position;
+                Vector3 direction = ray.GetPoint(initDistance) - clickedObject.transform.position;          
                 rb.velocity = direction * mouseDragPhysicsSpeed;                
+
                 yield return waitForFixedUpdate; 
             }
             else
