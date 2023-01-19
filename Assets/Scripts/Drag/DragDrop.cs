@@ -91,10 +91,11 @@ public class DragDrop : MonoBehaviour
         }
         else if (ObjectInBounds == false)
         {
-            MaskObject.transform.position = MaskPosition.transform.position;
+            MaskObject.transform.position = MaskOriginalPosition.transform.position;
         }
         iDragComponent?.onEndDrag();
         
+
     }
 
     
