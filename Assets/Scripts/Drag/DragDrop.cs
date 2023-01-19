@@ -12,7 +12,14 @@ public class DragDrop : MonoBehaviour
     [SerializeField] private float mouseDragPhysicsSpeed = 10;
     [SerializeField] private float mouseDragSpeed = 0.1f; //this changes the amount of drag the object has in relation to the mouse, reduce it to make the drag faster 
 
-    private bool ObjectInBounds;
+    public static bool ObjectInBounds;
+
+
+    [SerializeField] private GameObject MaskObject;
+    [SerializeField] private GameObject MaskPosition;
+    [SerializeField] private GameObject MaskOriginalPosition; 
+
+
     private WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
     
     private Vector3 velocity = Vector3.zero;
@@ -35,8 +42,7 @@ public class DragDrop : MonoBehaviour
     private void OnDisable()
     {
         mouseClick.performed -= MousePressed;
-        mouseClick.Disable();
-        
+        mouseClick.Disable();        
     }
 
     private void MousePressed(InputAction.CallbackContext context)
@@ -69,8 +75,7 @@ public class DragDrop : MonoBehaviour
             if(rb != null)
             {
                 Vector3 direction = ray.GetPoint(initDistance) - clickedObject.transform.position;
-                rb.velocity = direction * mouseDragPhysicsSpeed;
-                
+                rb.velocity = direction * mouseDragPhysicsSpeed;                
                 yield return waitForFixedUpdate; 
             }
             else
@@ -80,6 +85,18 @@ public class DragDrop : MonoBehaviour
                 yield return null;
             }
         }
+        if (ObjectInBounds == true)
+        {
+            MaskObject.transform.position = MaskPosition.transform.position;
+        }
+        else if (ObjectInBounds == false)
+        {
+            MaskObject.transform.position = MaskPosition.transform.position;
+        }
         iDragComponent?.onEndDrag();
+        
     }
+
+    
+
 }

@@ -72,7 +72,8 @@ public class QuestionManager : MonoBehaviour
                 currentLevel = 9;
                 Levels[currentLevel].SetActive(true);
                 percentage = (AnsweredCorrectly / 8) * 100;
-                Debug.Log("Convert " + percentage);                
+                Debug.Log("Convert " + percentage);
+                FinalScore();
             }
         }
     }
