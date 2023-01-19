@@ -11,7 +11,7 @@ public class Drag : MonoBehaviour
     public float xCoord;
     private void Start()
     {
-        xCoord = 1.3717f;          
+        xCoord = 1.3717f;        
     }
 
     void OnMouseDown()
@@ -46,7 +46,6 @@ public class Drag : MonoBehaviour
         if (Coll.gameObject.CompareTag("AudioCollider"))
         {
             Audio.Play();
-            Debug.Log("colision");
         }
     }
     private void OnTriggerExit(Collider other)
