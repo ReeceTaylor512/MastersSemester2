@@ -7,16 +7,18 @@ using UnityEngine.UI;
 public class QuestionManager : MonoBehaviour
 {
     public GameObject[] Levels;
+    public GameObject parant;
     int currentLevel;
     public float percentage;
     float AnsweredCorrectly;   
     string percentageConverted;
-    public Text TMPscore;   
+    public Text TMPscore;
+
 
 
     public void canceled() 
     {
-        Levels[currentLevel].SetActive(false);
+        parant.SetActive(false);
     }    
     
     public void correctAnswer() 
@@ -30,7 +32,7 @@ public class QuestionManager : MonoBehaviour
             {
                 currentLevel = 1;
                 Levels[currentLevel].SetActive(true);
-
+                StopAllAudio();
             }
             else if (currentLevel == 1)
             {
@@ -131,9 +133,19 @@ public class QuestionManager : MonoBehaviour
                 FinalScore();
             }
         }
-    }   
+    }
+    private AudioSource[] allAudioSources;
+
+    void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
+        }
+    }
     public void FinalScore()
     {          
         TMPscore.text = ("You managed to get " + percentage + "% Well done");
-    }
+    }    
 }

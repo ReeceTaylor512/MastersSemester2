@@ -6,8 +6,11 @@ public class DragDrop : MonoBehaviour
 {
     [SerializeField]
     private InputAction mouseClick;
-
+    public UI TimerScript;
+    public bool maskison = false;
     private Camera mainCamera;
+    public ClickChecker clickCheck;
+    public AudioSource o2Tank;
 
     [SerializeField] private float mouseDragPhysicsSpeed = 10;
     [SerializeField] private float mouseDragSpeed = 0.1f; //this changes the amount of drag the object has in relation to the mouse, reduce it to make the drag faster 
@@ -92,6 +95,10 @@ public class DragDrop : MonoBehaviour
         if (ObjectInBounds == true)
         {
             MaskObject.transform.position = MaskPosition.transform.position;
+            TimerScript.timerVal = TimerScript.timerVal + 30f;
+            maskison = true;
+            clickCheck.Maskon = true;
+            o2Tank.Play();
         }
         else if (ObjectInBounds == false)
         {
