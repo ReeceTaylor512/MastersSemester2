@@ -14980,7 +14980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9082800843439988796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16689,7 +16689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &9082800843945901552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17221,9 +17221,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: QuestionManager, Assembly-CSharp
-        m_MethodName: correctAnswer
+      - m_Target: {fileID: 1239547221}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20547,9 +20547,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: QuestionManager, Assembly-CSharp
-        m_MethodName: correctAnswer
+      - m_Target: {fileID: 1239547221}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: exitButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
