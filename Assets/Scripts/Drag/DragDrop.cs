@@ -6,7 +6,7 @@ public class DragDrop : MonoBehaviour
 {
     [SerializeField]
     private InputAction mouseClick;
-    public UI TimerScript;
+    public UI_Script TimerScript;
     public bool maskison = false;
     private Camera mainCamera;
     public ClickChecker clickCheck;

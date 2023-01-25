@@ -8,7 +8,7 @@ public class ClickChecker : MonoBehaviour
     public GameObject Bed2;
     public GameObject BreatingCollider;
     public Drag dragscript;
-    public UI TimerScript;
+    public UI_Script TimerScript;
     public DragDrop Mask;
     public GameObject Charachter;
     public GameObject Charachter2;

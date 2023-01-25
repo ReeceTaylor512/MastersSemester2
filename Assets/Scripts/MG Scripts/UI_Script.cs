@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
-public class UI : MonoBehaviour
+public class UI_Script : MonoBehaviour
 {
     public Text Timer;
     public Text Obj;
@@ -16,12 +16,12 @@ public class UI : MonoBehaviour
     public AudioSource HeartBEEP;
     public AudioSource TimeTick;
     public Image TimerBackground;
-    bool ticking = true;
+    public bool ticking = true;
     private void Start()
     {
         this.Wait(1f, TimerTick); 
     }
-    void TimerTick()
+    public void TimerTick()
     {
         if (timerVal == 5f && ticking) 
         {
@@ -65,7 +65,8 @@ public class UI : MonoBehaviour
     }
     public void RestartButton() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);        
     }
 
 }

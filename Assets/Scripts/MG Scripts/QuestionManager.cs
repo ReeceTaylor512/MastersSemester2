@@ -13,9 +13,13 @@ public class QuestionManager : MonoBehaviour
     float AnsweredCorrectly;   
     string percentageConverted;
     public Text TMPscore;
+    public Canvas ER_Canvas;
 
-
-
+    private void Awake()
+    {
+        ER_Canvas.enabled = false;
+    }
+    
     public void canceled() 
     {
         parant.SetActive(false);
@@ -73,7 +77,7 @@ public class QuestionManager : MonoBehaviour
             {
                 currentLevel = 9;
                 Levels[currentLevel].SetActive(true);
-                percentage = (AnsweredCorrectly / 8) * 100;
+                percentage = ((AnsweredCorrectly / 9) * 100);
                 Debug.Log("Convert " + percentage);
                 FinalScore();
             }
@@ -146,6 +150,6 @@ public class QuestionManager : MonoBehaviour
     }
     public void FinalScore()
     {          
-        TMPscore.text = ("You managed to get " + percentage + "% Well done");
+        TMPscore.text = ("You managed to get " + percentage.ToString("F1") + "% Well done");
     }    
 }
